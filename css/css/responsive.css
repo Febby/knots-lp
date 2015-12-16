@@ -703,13 +703,13 @@
     line-height: 44px !important;
   }
   #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a:hover {
-    color: #1abc9c !important;
+    color: #0258a4 !important;
   }
   #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title:hover > a {
     background-color: transparent;
     font-weight: 600;
     padding: 0 0 0 5px;
-    color: #1abc9c !important;
+    color: #0258a4 !important;
   }
   #primary-menu ul li .mega-menu-content.style-2 li {
     border-top: 1px solid #EEE;
@@ -744,7 +744,7 @@
     background-color: transparent !important;
     font-weight: 600;
     padding-left: 5px;
-    color: #1abc9c !important;
+    color: #0258a4 !important;
   }
   #primary-menu ul ul a {
     height: 44px !important;
@@ -991,7 +991,7 @@
     left: auto;
     right: 15px;
     height: auto;
-    background-color: #1abc9c;
+    background-color: #0258a4;
     z-index: 11;
   }
   #page-menu nav ul {
@@ -1601,7 +1601,7 @@
     border-radius: 2px !important;
   }
   #portfolio-filter li a:hover {
-    color: #1abc9c;
+    color: #0258a4;
   }
   #portfolio-filter li.activeFilter a {
     color: #FFF;

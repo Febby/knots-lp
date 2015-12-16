@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="stretched">
+<body class="stretched" data-loader="5" data-animation-in="fadeIn" data-speed-in="3500" data-animation-out="fadeOut" data-loader-color="#F36703" data-speed-out="800">
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -62,8 +62,8 @@
 
 						<ul class="one-page-menu">
 							<li class="current"><a href="#" data-href="#header"><div>Home</div></a></li>
-							<li><a href="#" data-href="#section-features"><div>About Us</div></a></li>
-							<li><a href="#" data-href="#section-pricing"><div>How It works</div></a></li>
+							<li><a href="#" data-href="#section-about"><div>About Us</div></a></li>
+							<li><a href="#" data-href="#section-how"><div>How It works</div></a></li>
 							<li><a href="#" data-href="#section-testimonials"><div>Log In</div></a></li>
 							<li><a href="#" data-href="#section-specs"><div>Contact Us</div></a></li>
 							<!-- <li><a href="#" data-href="#section-buy"><div>Buy Now</div></a></li> -->
@@ -82,7 +82,7 @@
 
 				<form action="#" method="post" role="form" class="landing-wide-form landing-form-overlay dark nobottommargin clearfix">
 					<div class="heading-block nobottommargin nobottomborder">
-						<h2>Signup for Beta Test!</h2>
+						<h3>Signup for Beta Test!</h3>
 						
 					</div>
 					<div class="line" style="margin: 20px 0 30px;"></div>
@@ -93,12 +93,16 @@
 					<div class="col_full">
 						<input type="number" class="form-control input-lg not-dark" value="" placeholder="Your Phone No.*">
 					</div>
-				<!-- 	<div class="col_full">
-						<input type="password" class="form-control input-lg not-dark" value="" placeholder="Choose Password*">
-					</div>
 					<div class="col_full">
-						<input type="password" class="form-control input-lg not-dark" value="" placeholder="Confirm Password*">
-					</div> -->
+						<label for="livesg">Do You Live In Singapore?</label>
+								<select id="livesg" name="doyouliveinsg" class="sm-form-control not-dark">
+									<option value="">-- Select One --</option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+									
+								</select>
+
+					</div>
 					<div class="col_full nobottommargin">
 						<button class="btn btn-lg btn-danger btn-block nomargin" value="submit" type="submit" style="">Submit</button>
 					</div>
@@ -113,7 +117,7 @@
 
 			<div class="content-wrap">
 
-				<div class="promo promo-dark promo-full landing-promo header-stick">
+				<div class="promo promo-light promo-full landing-promo header-stick">
 					<div class="container clearfix">
 						<h3>Lasting Connections. Endless Possibilities.<!-- <i class="icon-circle-arrow-right" style="position:relative;top:2px;"></i> --></h3>
 						<span>Meet like-minded professional singles</span>
@@ -126,13 +130,13 @@
 					 <!-- 5 connections start -->
 					<div id="section-features" class="heading-block title-center page-section">
 						<h2>Knots helps you find that ‘rare’ connection</h2>
-						<!-- <span>Some of the Features that are gonna blow your mind off</span> -->
+						
 					</div>
 
 					<div class="col_one_third">
 						<div class="feature-box fbox-center fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-screen i-alt"></i></a>
+								<a href="#"><i class="icon-eye i-alt"></i></a>
 							</div>
 							<h3>Trusted environment</h3>
 							
@@ -142,7 +146,7 @@
 				<div class="col_one_third">
 						<div class="feature-box fbox-center fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-screen i-alt"></i></a>
+								<a href="#"><i class="icon-share i-alt"></i></a>
 							</div>
 							<h3>Like-minded Professionals </h3>
 						</div>
@@ -151,7 +155,7 @@
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-center fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-screen i-alt"></i></a>
+								<a href="#"><i class="icon-search i-alt"></i></a>
 							</div>
 							<h3>Accurate matches</h3>
 						</div>
@@ -162,7 +166,7 @@
 					<div class="col_half">
 						<div class="feature-box fbox-center fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-screen i-alt"></i></a>
+								<a href="#"><i class="icon-comments i-alt"></i></a>
 							</div>
 							<h3>Fun Networking</h3>
 							
@@ -172,7 +176,7 @@
 					<div class="col_half col_last">
 						<div class="feature-box fbox-center fbox-effect">
 							<div class="fbox-icon">
-								<a href="#"><i class="icon-screen i-alt"></i></a>
+								<a href="#"><i class="icon-heart i-alt"></i></a>
 							</div>
 							<h3>Genuine Companions</h3>
 						</div>
@@ -195,7 +199,7 @@
 					<div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
 					
 					<!-- About us - start -->
-					<div class="container clearfix">
+					<div class="container clearfix" id="section-about">
 
 							<div class="col_two_fifth topmargin nobottommargin" id="radarChart" style="opacity: 0;">
 								<canvas id="radarChartCanvas" width="430" height="300"></canvas>
