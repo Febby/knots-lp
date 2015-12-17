@@ -9,12 +9,9 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
         $name = $_POST['template-contactform-name'];
         $email = $_POST['template-contactform-email'];
-        $phone = $_POST['template-contactform-phone'];
-        $service = $_POST['template-contactform-service'];
-        $subject = $_POST['template-contactform-subject'];
-        $message = $_POST['template-contactform-message'];
+        $liveinsg = $_POST['doyouliveinsg'];
 
-        $subject = isset($subject) ? $subject : 'New Message From Contact Form';
+        $subject = isset($subject) ? $subject : 'Knots - New Message From Contact Form';
 
         $botcheck = $_POST['template-contactform-botcheck'];
 
