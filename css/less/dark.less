@@ -95,7 +95,14 @@ body #side-panel.dark { background-color: #0258a4; }
 #header.dark.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark),
 #header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark),
 #header.dark.transparent-header.floating-header .container,
-#header.dark.transparent-header.floating-header.sticky-header .container { background-color: #0258A4; }
+#header.dark.transparent-header.floating-header.sticky-header .container { 
+	//#0258A4;
+	background-color: #fff;
+	border-bottom:2px solid #F74343; 
+	a{
+		color: #F74343;
+	}
+	}
 
 .dark #header.full-header #header-wrap:not(.not-dark),
 #header.full-header.dark #header-wrap:not(.not-dark) { border-bottom-color: rgba(255,255,255,0.15); }
