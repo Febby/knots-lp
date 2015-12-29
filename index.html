@@ -25,6 +25,7 @@
 	<!-- External JavaScripts
 	============================================= -->
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 
 	<!-- Document Title
@@ -93,7 +94,7 @@
 						<input type="email" id="template-contactform-email" name="template-contactform-email" class="required form-control input-lg not-dark" value="" placeholder="Your Email*">
 					</div>
 					<div class="col_full">
-						<input type="number" id="template-contactform-phoneno" name="template-contactform-phone" class=" required form-control input-lg not-dark" value="" placeholder="Your Phone No. +65XXXX *">
+						<input type="tel" id="template-contactform-phoneno" name="template-contactform-phone" class=" required form-control input-lg not-dark" value="" placeholder="Your Phone No. *" data-inputmask="'mask': '+65-99999999'" >
 					</div>
 					<div class="col_full">
 						<label for="livesg">Do You Live In Singapore?</label>
@@ -108,12 +109,14 @@
 					<div class="col_full hidden">
 								<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
 							</div>
-					<div class="col_full">
+					<div class="col_full ">
 						<button class="btn btn-lg btn-danger btn-block nomargin" value="submit" type="submit">Submit</button>
 					</div>
 					<div class="col_full nobottommargin">
-						<a href="#" data-toggle="modal" data-target=".bs-example-modal-fom" class="btn-block">Find Out More</a>
+						<a href="#" data-toggle="modal" data-target=".bs-example-modal-fom" class="btn btn-lg button-red btn-block nomargin" >Find Out More</a>
+
 					</div>
+					
 				</form>
 
 			</div>
@@ -127,7 +130,7 @@
 
 				<div class="promo promo-light promo-full landing-promo header-stick">
 					<div class="container clearfix">
-						<h3>Lasting Connections.<!-- <i class="icon-circle-arrow-right" style="position:relative;top:2px;"></i> --></h3>
+						<h3>Lasting Connections<!-- <i class="icon-circle-arrow-right" style="position:relative;top:2px;"></i> --></h3>
 						<span>Meet like-minded professional singles</span>
 					</div>
 				</div>
@@ -210,7 +213,7 @@
 					<div class="container clearfix" id="section-about">
 
 							<div class="col_two_fifth topmargin nobottommargin" >
-								<img src="images/icons/features/about.png" alt="about knots">
+								<img src="images/icons/features/main.png" alt="about knots">
 							</div>
 
 							<div class="col_three_fifth nobottommargin col_last">
@@ -224,7 +227,7 @@
 									</span>
 									<span></span>
 								</div>
-								<p>We know finding the right match is a time-consuming and frustrating experience.  Knots has been created with the sole purpose of addressing the existing gaps of inaccurate matches, endless profiling and social stigma.  Our solution is a simple 3-step process for single, busy professionals who are looking for a meaningful connection and endless possibilities.</p>
+								<p>We know finding the right match is a time-consuming and frustrating experience. <br>  Knots has been created with the sole purpose of addressing the existing gaps of inaccurate matches, endless profiling and social stigma. <br> Our solution is a simple 3-step process for single, busy professionals who are looking for a meaningful connection and endless possibilities.</p>
 
 								<!-- <p><span class="point">* Social Platform for the Elderly</span><br> Provide an alternative social platform for less tech-savvy senior citizens to connect with old and new friends </p> 
 								<p><span class="point">* Social Platform for Trippers</span><br>Enable like-minded trippers to find travel companions</p>
@@ -254,7 +257,7 @@
 									<a href="#"><i class="icon-edit i-alt"></i></a>
 								</div>
 								<h3>Create A Profile<span class="subtitle">Step 1</span></h3>
-								<p>Help us to know you better to auto-generate a personalized profile</p>
+								<p>Help us know you better to auto-generate a personalized profile</p>
 							</div>
 						</div>
 						
@@ -264,7 +267,7 @@
 									<a href="#"><i class="icon-hand-up i-alt"></i></a>
 								</div>
 								<h3>Select Events<span class="subtitle">Step 2</span></h3>
-								<p>Select events from a variety of interesting options and preferred schedule.</p>
+								<p>Select events from a variety of interesting options and preferred schedule</p>
 							</div>
 						</div>
 
@@ -324,14 +327,14 @@
 					<div class="clear bottommargin-lg"></div>
 					 <!-- 6 solutions start -->
 					<div id="section-features" class="heading-block title-center page-section">
-						<h2>Knots Has The Solution For You!</h2>
+						<h2>Knots Has The <span>Solution</span> For You!</h2>
 						<!-- <span>Some of the Features that are gonna blow your mind off</span> -->
 					</div>
 
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn">
-								<a href="#"><img src="images/icons/features/3.png" alt="Common Agenda"></a>
+								<a href="#"><img src="images/icons/features/umbrella.png" alt="Common Agenda"></a>
 							</div>
 							<h3>Common Agenda</h3>
 							<p>Boutique social networking site for like-minded professional singles looking for meaningful relationships.</p>
@@ -341,7 +344,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
-								<a href="#"><img src="images/icons/features/11.png" alt="Trusted And Secured"></a>
+								<a href="#"><img src="images/icons/features/lock.png" alt="Trusted And Secured"></a>
 							</div>
 							<h3>Trusted and Secured</h3>
 							<p>All data is validated, secured and kept strictly confidential at all times.</p>
@@ -351,7 +354,7 @@
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
-								<a href="#"><img src="images/icons/features/18.png" alt="Integration with social accounts"></a>
+								<a href="#"><img src="images/icons/features/social-bird.png" alt="Integration with social accounts"></a>
 							</div>
 							<h3>Integration with Social Accounts</h3>
 							<p>Intelligent and predictive analytics leveraging your social graph to find the right match for you. Intelligent analytics powered by Knots Analytics Engine. No more lengthy profile questions !</p>
@@ -363,7 +366,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn">
-								<a href="#"><img src="images/icons/features/8.png" alt="Trusted Environment"></a>
+								<a href="#"><img src="images/icons/features/match.png" alt="Trusted Environment"></a>
 							</div>
 							<h3>Accurate Matches</h3>
 							<p>Knots Analytics Engine and Facial Recognition technology enable more accurate matches</p>
@@ -373,7 +376,7 @@
 					<div class="col_one_third">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="200">
-								<a href="#"><img src="images/icons/features/14.png" alt="Curated Events"></a>
+								<a href="#"><img src="images/icons/features/wine.png" alt="Curated Events"></a>
 							</div>
 							<h3>Curated Events</h3>
 							<p>3 by 3 group networking, designed as per your preferences: Wine &amp; Dine, Sports, Culinary etc at exclusive establishments.</p>
@@ -383,7 +386,7 @@
 					<div class="col_one_third col_last">
 						<div class="feature-box fbox-plain">
 							<div class="fbox-icon" data-animate="bounceIn" data-delay="400">
-								<a href="#"><img src="images/icons/features/22.png" alt="Automated and seamless experiences"></a>
+								<a href="#"><img src="images/icons/features/event.png" alt="Automated and seamless experiences"></a>
 							</div>
 							<h3>Automated &amp; Seamless Experiences</h3>
 							<p>Simple 3-step process for busy professionals. No swipes. No chats. No endless profiling questions.  </p>
@@ -620,7 +623,7 @@
 					<div class="container clearfix">
 
 						<div id="section-buy" class="heading-block title-center nobottomborder page-section">
-							<h2>Be part of Knot’s beta test group today !</h2><span>Contribute your ideas to help us build innovative services that will delight you.</span>
+							<h2>We want to build services inspired by you, for you !</h2><span>Contribute your ideas to help us build innovative services that will delight you.</span>
 						</div>
 
 						<div class="center">
@@ -925,7 +928,7 @@
 
 						<div class="clear"></div>
 
-						<i class="icon-envelope2"></i> info@knots.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> knotsonskype
+						<i class="icon-envelope2"></i> info@rareknots.com<!-- <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> knotsonskype -->
 					</div>
 
 				</div>
@@ -942,8 +945,12 @@
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script type="text/javascript">
 
+	<script type="text/javascript">
+			$(document).ready(function(){
+   $("#template-contactform-phoneno").inputmask({"mask": "(999) 999-9999"}); //specifying options
+   
+				});
 							$("#template-contactform").validate({
 								submitHandler: function(form) {
 									$('.form-process').fadeIn();
@@ -961,6 +968,7 @@
 
 						</script>
 	<script type="text/javascript" src="js/functions.js"></script>
+	
 
 </body>
 </html>

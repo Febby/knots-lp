@@ -366,9 +366,16 @@ body:not(.device-touch) .button.button-full strong {
 /* Buttons - Colors
 -----------------------------------------------------------------*/
 
-.button-red { background-color: #C02942; }
+.button-red { 
+	color:#fff;
+	background-color: #C02942; 
+	transition: all .2s ease-in-out;
+	&:hover{
+		background-color: @theme-color;
+	}
+}
 .button-3d.button-red:hover,
-.button-reveal.button-red:hover { background-color: #C02942 !important; }
+.button-reveal.button-red:hover { background-color: @theme-color !important; }
 
 .button-teal { background-color: #53777A; }
 .button-3d.button-teal:hover,
