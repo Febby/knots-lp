@@ -204,7 +204,8 @@ body.stretched #header.full-header .container {
 	opacity: 0;
 	pointer-events: none;
 	cursor: pointer;
-	font-size: 14px;
+	color:@theme-color;
+	font-size: 32px;
 	position: absolute;
 	top: 50%;
 	margin-top: -25px;
@@ -1159,6 +1160,12 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease;
+}
+
+.sticky-header{
+	#logo{
+		margin-top:0;
+	}
 }
 
 #header.sticky-style-2 { height: ( (@header-height + @sticky-header-height) + 1 ); }
